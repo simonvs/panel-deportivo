@@ -31,7 +31,7 @@ export function DeleteMatch({ id }: { id: string }) {
   const deleteMatchWithId = deleteMatch.bind(null, id);
 
   return (
-    <form action={deleteMatchWithId}>
+    <form onSubmit={deleteMatchWithId}>
       <button type="submit" className="rounded-md border p-2 hover:bg-green-950">
         <span className="sr-only">Eliminar</span>
         <TrashIcon className="w-5" />

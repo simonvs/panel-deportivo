@@ -72,7 +72,7 @@ export async function createMatch(prevState: State, formData: FormData) {
   } catch (error) {
     // If a database error occurs, return a more specific error.
     return {
-      message: 'Database Error: Failed to Create Match.',
+      message: 'Database Error: Failed to Create Match.' + error,
     };
   }
 
@@ -89,6 +89,6 @@ export async function deleteMatch(id: string) {
     revalidatePath('/futbol/partidos');
     return { message: 'Partido eliminado' };
   } catch (error) {
-    return { message: 'Database Error: Failed to Delete Match.' };
+    return { message: 'Database Error: Failed to Delete Match.' + error };
   }
 }
