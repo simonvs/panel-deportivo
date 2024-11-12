@@ -2,13 +2,19 @@ export type Match = {
     id: string;
     team: string;
     goals: number;
-    assists: string;
-    goalDifference: number;
+    assists: number;
+    goaldifference: number;
     duration: number;
     date: string;
 };
 
-export type Team = {
+export type MatchesTable = {
     id: string;
-    name: string;
-}
+    date: Date;
+    team: string;
+    goals: number;
+    assists: number;
+    goaldifference: number;
+    duration: number;
+};
+

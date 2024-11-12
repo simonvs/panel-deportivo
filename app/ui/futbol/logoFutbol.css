@@ -1,0 +1,75 @@
+/* components/FootballField.module.css */
+
+/* Contenedor principal (logo) */
+.footballLogo {
+  height: 150px;
+  background-color: #4CAF50; /* Verde del campo */
+  border: 2px solid #FFFFFF; /* Borde blanco */
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Línea central */
+.halfLine {
+  width: 2px;
+  height: 100%;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Círculo central */
+.centerCircle {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Área de penal y portería */
+.penaltyBox, .goalBox {
+  position: absolute;
+  border: 2px solid #FFFFFF;
+  width: 60px;
+  height: 80px;
+}
+
+/* Área de penal y portería en el lado izquierdo */
+.penaltyBox.left {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.goalBox.left {
+  left: 0;
+  width: 30px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Área de penal y portería en el lado derecho */
+.penaltyBox.right {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.goalBox.right {
+  right: 0;
+  width: 30px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
