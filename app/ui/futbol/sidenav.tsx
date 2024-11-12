@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import NavLinks from '@/app/ui/futbol/nav-links';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import Logo from '@/app/ui/futbol/logo';
